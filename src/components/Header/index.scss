@@ -1,0 +1,12 @@
+@import "../../stylesheets/variables";
+
+.header {
+  align-items: center;
+  color: #{$primary-color};
+  display: flex;
+  font-family: 'raleway-bold', Courier, monospace;
+  font-size: 2em;
+  grid-area: header;
+  height: 100%;
+  justify-content: center;
+}
