@@ -1,2 +1,17 @@
-$primary-color: #ff4338;
+/** Default Values */
+$default-background-color: #f9f9f9;
 $default-text-color: #444;
+$primary-color: #ff4338;
+
+/** Alerts */
+$error-background-color: #f8d7da;
+$error-border-color: #f5c6cb;
+$error-color: #721c24;
+
+$info-background-color: #d1ecf1;
+$info-border-color: #bee5eb;
+$info-color: #0c5460;
+
+$warning-background-color: #fff3cd;
+$warning-border-color: #ffeeba;
+$warning-color: #856404;
