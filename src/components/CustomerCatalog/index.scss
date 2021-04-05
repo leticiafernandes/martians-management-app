@@ -1,0 +1,62 @@
+@import "../../stylesheets/variables";
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 80%;
+
+  caption {
+    font-size: 2em;
+    margin: .75em 0 .75em;
+  }
+
+  tr {
+    background-color: #{$default-background-color};
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+
+  th {
+    font-size: 1.2em;
+    font-family: 'raleway-bold', Courier, monospace;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
+
+  th, td {
+    padding: .625em;
+    text-align: center;
+  }
+
+  tbody {
+    tr {
+      font-size: 1.1em;
+
+      &:hover {
+        color: #{$primary-color};
+        cursor: pointer;
+        font-family: 'raleway-bold', Courier, monospace;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  table {
+    th {
+      font-size: .4em;
+    }
+
+    tbody {
+      tr {
+        font-size: .8em;
+      }
+    }
+  }
+}
