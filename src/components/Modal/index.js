@@ -1,9 +1,9 @@
 import React, {
-  useState,
-  useImperativeHandle,
-  forwardRef,
   useCallback,
   useEffect,
+  useImperativeHandle,
+  useState,
+  forwardRef,
 } from 'react'
 import { createPortal } from 'react-dom'
 import './index.scss'
