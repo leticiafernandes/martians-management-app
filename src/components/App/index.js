@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Header from '../Header'
-import MainContent from '../MainContent/index'
 import Footer from '../Footer/index'
+import MainContent from '../MainContent/index'
 
 import './index.scss'
 
