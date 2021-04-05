@@ -6,7 +6,14 @@ import './stylesheets/index.scss'
 import App from './components/App/index'
 import Store from './components/AppContext/store'
 
-import './stylesheets/index.scss'
+/** Functions */
+import makeServer from './server/makeServer'
+
+if (process.env.NODE_ENV === 'development') {
+  makeServer({ environment: 'development' })
+} else {
+  console.warn("Won't mock server instance")
+}
 
 ReactDOM.render(
   <React.StrictMode>
