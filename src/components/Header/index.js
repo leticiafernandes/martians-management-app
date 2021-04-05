@@ -4,7 +4,7 @@ import './index.scss'
 function Header() {
   return (
     <section className='header'>
-      <span>Martians Consumers</span>
+      <span>Martians Customers</span>
     </section>
   )
 }
