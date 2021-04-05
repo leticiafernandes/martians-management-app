@@ -1,0 +1,60 @@
+@import "../../stylesheets/variables";
+
+.alert {
+  animation: fadeIn .5s forwards;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: 'raleway-regular', Courier, monospace;
+  height: 10vh;
+  left: 0;
+  overflow: hidden;
+  padding: .5em .5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  
+
+  &--error, &--info, &--warning {
+    animation: fadeOut 2s both;
+    animation-delay: 2s;
+    border-radius: 15px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &--error {
+    background-color: #{$error-background-color};
+    border-color: #{$error-border-color};
+    color: #{$error-color};
+  }
+
+  &--info {
+    background-color: #{$info-background-color};
+    border-color: #{$info-border-color};
+    color: #{$info-color};
+  }
+
+  &--warning {
+    background-color: #{$warning-background-color};
+    border-color: #{$warning-border-color};
+    color: #{$warning-color};
+  }
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
