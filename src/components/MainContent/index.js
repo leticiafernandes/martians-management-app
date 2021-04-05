@@ -1,11 +1,11 @@
 import React from 'react'
-import MartiansPanel from '../MartiansPanel/index'
+import CustomerCatalog from '../CustomerCatalog/index'
 import './index.scss'
 
 function MainContent() {
   return (
     <section className='main'>
-      <MartiansPanel />
+      <CustomerCatalog />
     </section>
   )
 }
